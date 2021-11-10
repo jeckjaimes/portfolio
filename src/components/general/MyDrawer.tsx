@@ -26,8 +26,9 @@ const drawerWidth = 180;
 const openedMixin = (theme: Theme): CSSObject => ({
   width: drawerWidth,
   borderRadius: "0 15px 15px 0",
-  background:
-    "linear-gradient(135deg, rgba(25,61,148,0.4) 0%, rgba(16,10,96,0.4) 50%, rgba(30,10,87,0.4) 100%)",
+  //backgroundColor: "rgba(236,236,236,0.65)",
+  /*background:
+    "linear-gradient(135deg, rgba(25,61,148,0.4) 0%, rgba(16,10,96,0.4) 50%, rgba(30,10,87,0.4) 100%)",*/
   transition: theme.transitions.create("width", {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.enteringScreen,
@@ -37,8 +38,9 @@ const openedMixin = (theme: Theme): CSSObject => ({
 
 const closedMixin = (theme: Theme): CSSObject => ({
   borderRadius: "0 15px 15px 0",
-  background:
-    "linear-gradient(135deg, rgba(25,61,148,0.4) 0%, rgba(16,10,96,0.4) 50%, rgba(30,10,87,0.4) 100%)",
+  //backgroundColor: "rgba(236,236,236,0.65)",
+  /*background:
+    "linear-gradient(135deg, rgba(25,61,148,0.4) 0%, rgba(16,10,96,0.4) 50%, rgba(30,10,87,0.4) 100%)",*/
   transition: theme.transitions.create("width", {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
@@ -71,6 +73,24 @@ const Drawer = styled(MuiDrawer, {
     "& .MuiDrawer-paper": closedMixin(theme),
   }),
 }));
+
+/*const Drawer = styled(MuiDrawer, {
+  shouldForwardProp: (prop) => prop !== "open",
+})(({ theme, open }) => ({
+  width: drawerWidth,
+  flexShrink: 0,
+  whiteSpace: "nowrap",
+  boxSizing: "border-box",
+  backgroundColor: "rgba(236,236,236,0.65)",
+  ...(open && {
+    ...openedMixin(theme),
+    "& .MuiDrawer-paper": openedMixin(theme),
+  }),
+  ...(!open && {
+    ...closedMixin(theme),
+    "& .MuiDrawer-paper": closedMixin(theme),
+  }),
+}));*/
 
 const MyDrawer: FunctionComponent<ComponentProps> = ({
   children,

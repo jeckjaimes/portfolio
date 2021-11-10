@@ -46,8 +46,8 @@ export default function MyApp(props: MyAppProps) {
             main: red.A400,
           },
           background: darkTheme
-            ? { default: "#090c10" }
-            : { default: "#ececec" },
+            ? { default: "#090c10", paper: "#0d1117" }
+            : { default: "#ececec", paper: "#e5e5e5" },
           text: darkTheme
             ? {
                 primary: "rgba(238,238,238,0.87)",
