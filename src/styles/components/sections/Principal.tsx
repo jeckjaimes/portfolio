@@ -1,6 +1,7 @@
 import { makeStyles } from "@mui/styles";
 import { Theme } from "@mui/material/styles";
 
+// @ts-ignore
 const principalStyles = makeStyles<Theme>((theme) => ({
   container: {
     height: "100vh",
