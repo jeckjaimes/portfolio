@@ -1,6 +1,6 @@
 import React from "react";
 import { principalStyles } from "../../styles/components/sections/Principal";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { useIntl } from "react-intl";
 
 const Principal = () => {
@@ -8,7 +8,24 @@ const Principal = () => {
   const { formatMessage: f } = useIntl();
   return (
     <div className={classes.container}>
-      <Typography>{f({ id: "principal" })}</Typography>
+      <Typography className={classes.title}>
+        {f({ id: "principalTitleFirst" })}
+      </Typography>
+      <Typography className={classes.title}>
+        {f({ id: "principalTitleSecond" })}
+      </Typography>
+      <Typography className={classes.subtitle}>
+        {f({ id: "principalSubtitle" })}
+      </Typography>
+      <Button
+        className={classes.btn}
+        size="large"
+        variant="contained"
+        color="primary"
+        disableElevation
+      >
+        {f({ id: "principalButton" })}
+      </Button>
     </div>
   );
 };

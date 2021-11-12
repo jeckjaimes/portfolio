@@ -36,8 +36,8 @@ export default function MyApp(props: MyAppProps) {
         palette: {
           mode: darkTheme ? "dark" : "light",
           primary: {
-            main: "#58c7ff",
-            contrastText: "#eeeeee",
+            main: "#00b5f1",
+            contrastText: "#efefef",
           },
           secondary: {
             main: "#161b22",
@@ -56,6 +56,19 @@ export default function MyApp(props: MyAppProps) {
                 secondary: "rgba(238,238,238,0.54)",
               }
             : {},
+        },
+        /*typography: {
+          fontFamily: `"Montserrat", "Inconsolata", "Roboto", "sans-serif"`,
+        },*/
+        components: {
+          MuiButton: {
+            styleOverrides: {
+              root: {
+                borderRadius: 30,
+                textTransform: "none",
+              },
+            },
+          },
         },
       }),
     [darkTheme]

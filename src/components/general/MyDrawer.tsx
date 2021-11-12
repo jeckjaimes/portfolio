@@ -74,24 +74,6 @@ const Drawer = styled(MuiDrawer, {
   }),
 }));
 
-/*const Drawer = styled(MuiDrawer, {
-  shouldForwardProp: (prop) => prop !== "open",
-})(({ theme, open }) => ({
-  width: drawerWidth,
-  flexShrink: 0,
-  whiteSpace: "nowrap",
-  boxSizing: "border-box",
-  backgroundColor: "rgba(236,236,236,0.65)",
-  ...(open && {
-    ...openedMixin(theme),
-    "& .MuiDrawer-paper": openedMixin(theme),
-  }),
-  ...(!open && {
-    ...closedMixin(theme),
-    "& .MuiDrawer-paper": closedMixin(theme),
-  }),
-}));*/
-
 const MyDrawer: FunctionComponent<ComponentProps> = ({
   children,
   darkTheme,
