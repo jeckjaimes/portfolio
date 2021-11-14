@@ -7,6 +7,11 @@ const socialMedias: TSocialMedia[] = [
     icon: "linkedin",
   },
   {
+    title: "Github",
+    link: "https://github.com/jeckjaimes",
+    icon: "github",
+  },
+  {
     title: "Email",
     link: "mailto:jeckjaimes@gmail.com",
     icon: "email",
