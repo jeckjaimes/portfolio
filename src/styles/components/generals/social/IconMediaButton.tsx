@@ -6,10 +6,14 @@ const iconMediaButtonStyles = makeStyles<Theme>((theme) => ({
     fontSize: "2rem",
     margin: "0 1.5vw",
     textDecoration: "none",
+    color: theme.palette.text.primary,
+    "&:visited": {
+      textDecoration: "none",
+      color: theme.palette.text.primary,
+    },
   },
   icon: {
     fontSize: "2rem",
-    color: "#dcdcdc",
     "&:hover": {
       color: theme.palette.primary.main,
       cursor: "pointer",

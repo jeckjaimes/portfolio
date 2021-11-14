@@ -6,7 +6,9 @@ const footerStyles = makeStyles<Theme>((theme) => ({
     margin: "40px 0 16px 0",
   },
   link: {
+    fontWeight: "bold",
     textDecoration: "none",
+    color: theme.palette.primary.main,
     "&:visited": {
       textDecoration: "none",
       color: theme.palette.primary.main,
