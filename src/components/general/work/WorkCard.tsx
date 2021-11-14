@@ -5,9 +5,10 @@ type ComponentProps = {
   work: any;
 };
 
+// @ts-ignore
 const WorkCard: FunctionComponent<ComponentProps> = ({ work }) => {
   const classes = workCardStyles();
-  return <div className={classes.container}>{work}</div>;
+  return <div className={classes.container} />;
 };
 
 export default WorkCard;
