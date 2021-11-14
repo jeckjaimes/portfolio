@@ -7,8 +7,8 @@ const WorkList: FunctionComponent = () => {
   const classes = workListStyles();
   return (
     <div className={classes.cardContainer}>
-      {works.map(() => (
-        <WorkCard />
+      {works.map((work, index) => (
+        <WorkCard key={index} />
       ))}
     </div>
   );
