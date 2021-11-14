@@ -28,7 +28,6 @@ const socialMedias: TSocialMedia[] = [
   },
 ];
 
-const enData = {};
-const esData = {};
+const works = [{}, {}, {}, {}, {}, {}];
 
-export { socialMedias, enData, esData };
+export { socialMedias, works };

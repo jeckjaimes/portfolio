@@ -1,16 +1,16 @@
 import React from "react";
 import { aboutStyles } from "../../styles/components/sections/About";
-import { Typography } from "@mui/material";
 import { useIntl } from "react-intl";
+import Section from "../layouts/Section";
 
 const About = () => {
   // @ts-ignore
   const classes = aboutStyles();
   const { formatMessage: f } = useIntl();
   return (
-    <>
-      <Typography>{f({ id: "about" })}</Typography>
-    </>
+    <Section title={f({ id: "about" })}>
+      <div />
+    </Section>
   );
 };
 

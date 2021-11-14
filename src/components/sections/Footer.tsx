@@ -16,7 +16,12 @@ const Footer = () => {
       </Typography>
       <Typography align="center" className={classes.madeWith}>
         {f({ id: "madeWith" })}{" "}
-        <a color="primary" href="https://nextjs.org" className={classes.link}>
+        <a
+          color="primary"
+          href="https://nextjs.org"
+          target="_blank"
+          className={classes.link}
+        >
           Next.js
         </a>
       </Typography>
