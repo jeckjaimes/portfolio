@@ -4,8 +4,8 @@ import { iconMediaButtonStyles } from "../../../styles/components/generals/socia
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GithubIcon from "@mui/icons-material/Github";
 
 type ComponentProps = {
   title: string;
@@ -25,7 +25,7 @@ const IconMediaButton: FunctionComponent<ComponentProps> = ({
     email: <EmailIcon className={classes.icon} />,
     whatsapp: <WhatsAppIcon className={classes.icon} />,
     linkedin: <LinkedInIcon className={classes.icon} />,
-    github: <GithubIcon className={classes.icon} />,
+    github: <GitHubIcon className={classes.icon} />,
   };
 
   // @ts-ignore
